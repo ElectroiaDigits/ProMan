@@ -7,7 +7,7 @@ interface
 uses
   Classes, SysUtils, dateutils, TaskU;
 type
-  TTaskList = array[0..9] of TTask;
+  TTaskList = TList;  
 
   { TProject }
 
@@ -65,11 +65,11 @@ procedure TProject.Update;
 var
   i: Integer;
 begin
-  for i:= 0 to high(fTaskList) do
+  for i:= 0 to fTaskList.count-1 do
   begin
-    if fTaskList[i].IsDone then inc(fProgress);
+    if TTask(fTaskList[i]).IsDone then inc(fProgress);
   end;
-  if fProgress >= 9 then Done;
+  if fProgress >= 9 then Done;  
 end;
 
 constructor TProject.Create(sTitle: string; sStartDate, sEndDate: TDateTime;
