@@ -5,7 +5,7 @@ unit ProjectU;
 interface
 
 uses
-  Classes, SysUtils, TaskU;
+  Classes, SysUtils, dateutils, TaskU;
 type
   TTaskList = array[0..9] of TTask;
 
@@ -19,8 +19,10 @@ type
     fStartDate: TDateTime;
     fTaskList: TTaskList;
     fTitle: String;
+    fPriority: ShortInt;
     procedure setTaskList(AValue: TTaskList);
     procedure setTitle(AValue: String);
+    procedure SetPriority(AValue: ShortInt);
     public
       property Title: String read fTitle write setTitle;
       property StartDate: TDateTime read fStartDate;
@@ -28,14 +30,20 @@ type
       property Tasks: TTaskList read fTaskList write setTaskList;
       property Progress: Integer read fProgress ;
       property IsDone: Boolean read fDone;
+      property Priority : ShortInt read fPriority write SetPriority;
+      function ElapsedTime : integer;
       procedure Done;
       procedure Update;
+      constructor Create(sTitle : string; sStartDate, sEndDate : TDateTime; SPriority : ShortInt);
 
   end;
 
 implementation
 
 { TProject }
+
+
+
 
 procedure TProject.setTaskList(AValue: TTaskList);
 begin
@@ -64,5 +72,25 @@ begin
   if fProgress >= 9 then Done;
 end;
 
-end.
+constructor TProject.Create(sTitle: string; sStartDate, sEndDate: TDateTime;
+				SPriority: ShortInt);
+begin
+  fTitle:= sTitle;
+  fStartDate:= sStartDate;
+  fEndDate:= sEndDate;
+  fPriority:= SPriority;
+end;
 
+
+procedure TProject.SetPriority(AValue: ShortInt);
+begin
+  fPriority:=AValue;
+end;
+
+
+function TProject.ElapsedTime: integer;
+begin
+     Result := Round(Now - fStartDate);
+end;
+
+end.
