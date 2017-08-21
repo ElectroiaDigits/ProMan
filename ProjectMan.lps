@@ -19,17 +19,20 @@
         <ComponentName Value="Form1"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
-        <CursorPos X="24" Y="47"/>
+        <TopLine Value="5"/>
+        <CursorPos X="50" Y="46"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="tasku.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="TaskU"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <CursorPos X="33" Y="31"/>
+        <TopLine Value="5"/>
+        <CursorPos X="18" Y="21"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit2>
@@ -38,12 +41,13 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="ProjectU"/>
         <EditorIndex Value="1"/>
+        <TopLine Value="54"/>
         <CursorPos X="40" Y="41"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit3>
     </Units>
-    <JumpHistory Count="14" HistoryIndex="13">
+    <JumpHistory Count="17" HistoryIndex="16">
       <Position1>
         <Filename Value="tasku.pas"/>
         <Caret Line="17" Column="56"/>
@@ -100,6 +104,18 @@
         <Filename Value="main.pas"/>
         <Caret Line="36" Column="38" TopLine="22"/>
       </Position14>
+      <Position15>
+        <Filename Value="tasku.pas"/>
+        <Caret Line="29" Column="56" TopLine="14"/>
+      </Position15>
+      <Position16>
+        <Filename Value="tasku.pas"/>
+        <Caret Line="21" Column="11"/>
+      </Position16>
+      <Position17>
+        <Filename Value="projectu.pas"/>
+        <Caret Line="41" Column="40" TopLine="54"/>
+      </Position17>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>
