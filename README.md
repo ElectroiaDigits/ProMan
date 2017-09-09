@@ -1,2 +1,2 @@
 # ProMan
-Easy to use simple Project manager 
+Easy to use simple Project manager (not finished!)
