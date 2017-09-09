@@ -3,7 +3,7 @@
   <ProjectSession>
     <Version Value="10"/>
     <BuildModes Active="Default"/>
-    <Units Count="4">
+    <Units Count="5">
       <Unit0>
         <Filename Value="ProjectMan.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -29,7 +29,6 @@
         <Filename Value="tasku.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="TaskU"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
         <TopLine Value="5"/>
         <CursorPos X="18" Y="21"/>
@@ -46,8 +45,16 @@
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit3>
+      <Unit4>
+        <Filename Value="../../../../.local/share/applications/jetbrains-phpstorm.desktop"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit4>
     </Units>
-    <JumpHistory Count="17" HistoryIndex="16">
+    <JumpHistory Count="16" HistoryIndex="15">
       <Position1>
         <Filename Value="tasku.pas"/>
         <Caret Line="17" Column="56"/>
@@ -112,10 +119,6 @@
         <Filename Value="tasku.pas"/>
         <Caret Line="21" Column="11"/>
       </Position16>
-      <Position17>
-        <Filename Value="projectu.pas"/>
-        <Caret Line="41" Column="40" TopLine="54"/>
-      </Position17>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>
