@@ -27,6 +27,10 @@ var
   //procedure Sort;
   //procedure SaveToFile;
   //procedure LoadToFile;
+  //procedure NewReminder;
+  //procedure ShowAllReminders ;
+  //procedure NewNote;
+  //procedure ShowAllNotes;
   procedure FreeAll;
 
 implementation
